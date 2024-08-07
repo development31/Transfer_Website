@@ -1,0 +1,216 @@
+.xyz {
+  .transfer1 {
+    background-image: url("https://images.pexels.com/photos/2405039/pexels-photo-2405039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 88vh;
+    position: relative;
+
+    .route-planner {
+      width: 98%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      gap: 1rem;
+
+      .input-with-icon {
+        width:130px;
+        display: flex;
+        align-items: center;
+        border: 2px solid #ccc;
+        border-radius: 0.5rem;
+        height: 4rem;
+        position: relative;
+        padding: 0 1rem;
+
+        .plus-button,
+        .minus-button {
+          width: 3rem;
+          height: 3rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 2rem;
+          cursor: pointer;
+        }
+
+        .fa-user.icon {
+          margin: 0 0.5rem;
+        }
+
+        .passenger-input {
+          width: 4rem;
+          font-size: 1.5rem;
+          text-align: center;
+          height: 3rem;
+          outline: none;
+          border: none;
+        }
+      }
+
+      .from,
+      .to-input,
+      select {
+        width: 20rem;
+        border: 2px;
+        border-radius: 0.5rem;
+        font-size: 1.7rem;
+      }
+
+      .input-container,
+      .dropdown {
+        margin: 0 0.5rem;
+        position: relative;
+
+        .date-input {
+          width: 18rem;
+          font-size: 1.5rem;
+          text-align: center;
+          height: 4rem;
+        }
+
+        .date-input {
+          padding: 0;
+        }
+      }
+
+      .input-container input {
+        padding: 1rem;
+        border: 2px solid #ccc;
+        border-radius: 0.5rem;
+        font-size: 1.8rem;
+        margin: 0;
+      }
+
+      .input-container input:disabled {
+        background-color: #f1f1f1;
+      }
+
+      .from-input::placeholder,
+      .to-input::placeholder,
+      .date-input::placeholder,
+      .passenger-input::placeholder {
+        color: rgba(78, 127, 241, 0.4);
+        font-size: 1.55rem;
+        font-weight: 700;
+      }
+
+      .date-input::placeholder {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .update-route {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 1.4rem 1.5rem;
+        border-radius: 0.6rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: auto;
+      }
+    }
+  }
+
+
+  .transfer3 {
+    margin: 5rem 6rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 3rem;
+    row-gap: 8rem;
+    padding: 2rem;
+
+    &.selected-car {
+      margin-top: 30rem;
+     
+    }
+  }
+}
+
+/* Responsive Container */
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .xyz .transfer1 .route-planner {
+    width: 100%;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .xyz .transfer1 .route-planner {
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .xyz .transfer3 {
+    margin-top: 20rem; /* Adjust as needed */
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 4rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .xyz .transfer1 .route-planner {
+    width: 85%;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .xyz .transfer1 .route-planner {
+    width: 95%;
+    padding: 1rem;
+  }
+
+  .xyz .transfer3 {
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
+  .xyz .transfer1 .route-planner {
+    padding: 0.8rem;
+  }
+
+  .xyz .transfer3 {
+    margin: 3rem 1rem; /* Adjust as needed */
+    row-gap: 2rem;
+    padding-top: 40rem;
+  }
+}

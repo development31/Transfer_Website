@@ -1,0 +1,176 @@
+
+.register-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;  
+  padding: 2em;
+}
+
+.register-card {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  padding: 0px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ 
+}
+
+.div-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  /* color: royalblue; */
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.title::before,
+.title::after {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  left: 0px;
+  /* background-color: royalblue; */
+}
+
+/* .title::before {
+  width: 20px;
+  height: 20px;
+  background-color: royalblue;
+} */
+
+.title::after {
+  width: 20px;
+  height: 20px;
+  animation: pulse 1s linear infinite;
+}
+
+.message,
+.signin {
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
+}
+
+.signin {
+  text-align: center;
+}
+
+.signin a {
+  color: royalblue;
+}
+
+.signin a:hover {
+  text-decoration: underline;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+}
+
+.form label {
+  position: relative;
+  flex: 1 1 100%;
+}
+
+.form label .input {
+  width: 100%;
+  padding: 15px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.form label .input + span {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+  top: 18px;
+  font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 5px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form label .input:valid + span {
+  color: royalblue;
+  font-size: 1.2rem;
+}
+
+.register-submit {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 12px 0;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+}
+
+.register-submit:hover {
+  background-color: rgb(56, 90, 194);
+}
+
+
+
+@media (max-width: 768px) {
+  .register-card {
+    margin: 7rem auto 0 auto; 
+  }
+}
+
+@media (max-width: 600px) {
+  .register-card {
+    padding: 15px;
+  }
+
+  .form label {
+    flex-basis: 100%; 
+  }
+
+  .form label .input {
+    font-size: 14px; 
+  }
+
+  .title {
+    font-size: 24px; 
+  }
+}

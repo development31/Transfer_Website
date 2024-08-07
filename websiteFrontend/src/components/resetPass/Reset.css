@@ -1,0 +1,111 @@
+
+.reset-password {
+    padding: 4rem;
+    background: linear-gradient(to right, rgba(65, 161, 250, 0.5), rgb(152, 182, 245));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+  
+  .reset-card{
+    box-shadow: 4px 4px 12px 0px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    border-radius: 0.7rem;
+    background: linear-gradient(to right, rgba(244, 245, 247, 0.5), rgb(244, 246, 247));
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  .reset-heading {
+    display: flex;
+    justify-content: center;
+ 
+  }
+  
+  .reset-heading h3 {
+    font-size: 2rem;
+
+    font-weight: bold;
+  }
+  
+  .reset-section{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+  }
+  
+  .reset-section label {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+
+
+
+  }
+  
+  .reset-section input {
+    width: 100%;
+    max-width: 40rem;
+    height: 3rem;
+    border: 3px solid #608dfd;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .reset-section button {
+    width: 10rem;
+    height: 3rem;
+    background-color: #608dfd;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  
+  .reset-section button:hover {
+    background-color: #507acc;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .reset-card {
+      width: 90%;
+      padding: 1rem;
+    }
+  
+    .reset-section input {
+      width: 100%;
+    }
+  
+    .reset-section button {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .reset-password1 {
+      padding: 2rem;
+    }
+  
+    .reset-card {
+      width: 100%;
+      padding: 1rem;
+    }
+  
+    .reset-heading h3 {
+      font-size: 1.5rem;
+    }
+  
+    .reset-section input {
+      width: 100%;
+    }
+  
+    .reset-section button {
+      width: 100%;
+    }
+  }
+  

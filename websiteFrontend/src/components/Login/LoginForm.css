@@ -1,0 +1,142 @@
+/* LoginForm.css */
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .img-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .login {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f8f8f8;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 32px 32px 44px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align everything inside the login container */
+  }
+  
+  .main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the main content */
+  }
+  
+  h3 {
+    font-size: 2em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  form{
+    width: 100%;
+  }
+  
+  .input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    width: 100%;
+    align-items: center; 
+  }
+  
+  .input-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start ;
+    justify-content: start;
+    width: 100%;
+    
+  }
+  
+  label {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    margin-top: 1.5em;
+  }
+  
+ 
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%; 
+    margin: 0;
+    /* box-sizing: border-box; */
+  }
+  
+  input:focus {
+    border-color: #4a90e2;
+    outline: none;
+  }
+  
+  .wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #357abd;
+  }
+  
+  .forget-section {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .forget-section a {
+    margin: 0 5px;
+    color: #4a90e2;
+    text-decoration: none;
+  }
+  
+  .forget-section a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 480px) {
+    .login {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  
+    input[type="text"],
+    input[type="password"] {
+      font-size: 14px;
+    }
+  
+    button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  
